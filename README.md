@@ -41,34 +41,34 @@ Install requirements by running `pip install -r requirements.txt`.
 
 Usage: cc2340-bsl.py [-h] [-q] [-V] [-f] [-e] [-w] [-v] [-p PORT] [-b BAUD] [-a ADDRESS] [--version] file
 
-positional arguments:
+  positional arguments:
 
-  file
+    file
 
-options:
+  options:
 
-  -h, --help            show this help message and exit
+    -h, --help            show this help message and exit
   
-  -q                    Quiet
+    -q                    Quiet
   
-  -V                    Verbose
+    -V                    Verbose
   
-  -f, --force           Force operation(s) without asking any questions
+    -f, --force           Force operation(s) without asking any questions
   
-  -e, --erase           Mass erase
+    -e, --erase           Mass erase
   
-  -w, --write           Write
+    -w, --write           Write
   
-  -v, --verify          Verify (CRC32 check)
+    -v, --verify          Verify (CRC32 check)
   
-  -p PORT, --port PORT  Serial port (default: first USB-like port in /dev)
+    -p PORT, --port PORT  Serial port (default: first USB-like port in /dev)
   
-  -b BAUD, --baud BAUD  Baud speed (default: 500000)
+    -b BAUD, --baud BAUD  Baud speed (default: 500000)
   
-  -a ADDRESS, --address ADDRESS
-  
-                        Target address
-						
-  --version             show program's version number and exit
+    -a ADDRESS, --address ADDRESS
+	
+                          Target address
+
+    --version             show program's version number and exit
 
 Example usage: python cc2340-bsl.py -p COM32 -b 1000000 -e -w -v test.hex
